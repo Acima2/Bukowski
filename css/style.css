@@ -65,6 +65,11 @@ body {
 
 /*HEADER*/
 
+.row0 {
+	display: table-row;
+	height: 70px;
+}
+
 .head {
 	display: table-row;
 	width: 100%;
@@ -82,7 +87,7 @@ h1 {
 	line-height: 70px;
     font-family: 'Dosis', sans-serif;
     font-size: 55px;
-    margin-top: 8%;
+    margin-top: 6.5%;
     margin-bottom: 4px;
 }
 
@@ -319,6 +324,7 @@ footer {
 	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
+	cursor: pointer;
 }
 
 .twitter {
@@ -330,6 +336,7 @@ footer {
 	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
+	cursor: pointer;
 }
 
 .world {
@@ -341,5 +348,5 @@ footer {
 	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
+	cursor: pointer;
 }
-
