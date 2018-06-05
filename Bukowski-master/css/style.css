@@ -1,0 +1,420 @@
+/*GENERAL*/
+
+body {
+	margin: 0 auto;
+	width: 100vw;
+}
+
+.tableau {
+	display: table;
+}
+
+/*BARRE DE NAVIGATION*/
+
+#nav {
+	display: table-header-group;
+	background-color: #2c3e50;
+	height: 70px;
+	border-spacing: 20px 10px;
+	position: fixed;
+	width: 100%;
+	z-index: 99;
+}
+
+.logo {
+	display: table-cell;
+	width: 69%;
+	vertical-align: middle;
+	padding-left: 40px;
+}
+
+.bukowski {
+	background-image: url('../img/bukowski.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top center;
+	height: 40px;
+	width: 75px;
+	border-radius: 4%;
+	cursor: pointer;
+}
+
+.bukowski:hover {
+	height: 45px;
+	width: 90px;
+}
+
+.bouton {
+	display: table-cell;
+	height: 45px;
+	width: 110px;
+	vertical-align: middle;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Droid Serif', serif;
+	color: #F5F5F5;
+	background-color: transparent;
+	border-radius: 3%;
+	cursor: pointer;
+}
+
+.bouton:hover {
+	background-color: #e74c3c; 
+}
+
+
+/*HEADER*/
+
+.row0 {
+	display: table-row;
+	height: 70px;
+}
+
+.head {
+	display: table-row;
+	width: 100%;
+	background-image: url('../img/paon.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top;
+	height: 400px;
+}	
+
+h1 {
+	text-align: center;
+	text-transform: uppercase;
+	color: #2c3e50;
+	line-height: 70px;
+    font-family: 'Dosis', sans-serif;
+    font-size: 55px;
+    margin-top: 6.5%;
+    margin-bottom: 4px;
+}
+
+.author {
+	text-align: right;
+	font-family: 'Dosis', sans-serif;
+    font-size: 25px;
+    color: #2c3e50;
+    font-weight: bold;
+    margin-right: 24%;
+    margin-top: 9px;
+    text-decoration: underline #2c3e50;
+}
+
+.intro {
+	display: none;
+	width: 250px;
+	height: 265px;
+	border-radius: 0% 4% 4% 0%;
+	background-color: #2c3e50;
+	position: absolute;
+	top: 125px;
+	padding: 10px 10px 10px 10px;
+}
+
+.introTextName {
+	color: #f5f5f5;
+	font-family: 'Droid Serif', serif;
+	font-size: 15px;
+	font-weight: bold;
+	width: 100px;
+	margin-left: 2%;
+	margin-bottom: 0;
+	line-height: 23px;
+	display: block;
+	text-align: left;
+}
+
+.introTextName::before {
+  content: "";
+  background-color: #e74c3c;
+  position: absolute;
+  left: 40%;
+  width: 2px;
+  height: 43px;
+}
+
+.introText {
+	color: #f5f5f5;
+	font-family: 'Droid Serif', serif;
+	font-size: 13px;
+	line-height: 22px;
+	padding-left: 10%;
+	padding-right: 5%;
+}
+
+.introText::before {
+	content: "W";
+	font-size: 18px;
+}
+
+.introDate {
+	color: #f5f5f5;
+	font-family: 'Droid Serif', serif;
+	font-size: 15px;
+	text-transform: none;
+	font-weight: bold;
+	width: 50px;
+	float: right;
+	margin-top: 0;
+	margin-right: 5%;
+}
+
+.introDate::before {
+  content: "";
+  background-color: #e74c3c;
+  position: absolute;
+  right: 27%;
+  width: 3px;
+  height: 35px;
+}
+
+
+/*LIGNE UN*/
+
+.row1 {
+	background-color: #bdc3c7;
+	display: table-row;
+	width: 100%;
+	border-spacing: 100px 30px;
+	color: #2c3e50;
+	font-family: 'Droid Serif', serif;
+	font-size: 15px;
+	line-height: 28px;
+}
+
+.cell {
+	display: table-cell;
+	padding-left: 4%;
+	width: 300px;
+}
+
+h3 {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+/*LIGNE DEUX */
+
+.row2 {
+	display: table-row;
+}
+.cellPhoto {
+	display: table-cell;
+	border-spacing: 150px 50px;
+	background-color: #95a5a6;
+	vertical-align: middle;
+	padding-top: 1.5%;
+	padding-bottom: 1.5%;
+}
+
+.photo2 {
+	display: table-cell;
+	background-image: url('../img/fire.jpg');
+	background-size: cover;
+	background-position: right;
+	width: 300px;
+	height: 350px;
+	border-radius: 4%;
+	cursor: pointer;
+    transition: all 0.3s ease 0.3s;
+    -moz-transition: -moz-transform .3s;
+}
+
+.photo1 {
+	display: table-cell;
+	background-image: url('../img/fireRing.jpg');
+	background-size: cover;
+	background-position: center;
+	width: 300px;
+	height: 350px;
+	border-radius: 4%;
+	cursor: pointer;
+    transition: all 0.3s ease 0.3s;
+    -moz-transition: -moz-transform .3s;
+}
+
+.photo3 {
+	display: table-cell;
+	background-image: url('../img/fire2.jpg');
+	background-size: cover;
+	background-position: center;
+	width: 300px;
+	height: 350px;
+	border-radius: 4%;	
+	cursor: pointer;
+    transition: all 0.3s ease 0.3s;
+    -moz-transition: -moz-transform .3s;
+}
+
+.photo1:hover, .photo2:hover, .photo3:hover {
+	transition: 0.5s;
+	transform: rotate(-7deg); 
+}
+
+h2 {
+	display: table-caption;
+	text-align: center;
+	font-family: 'Droid Serif', serif;
+	font-size: 30px;
+	color: #ecf0f1;
+}
+
+
+/*LIGNE TROIS*/
+
+.row3 {
+	display: table-row;
+}
+
+.longPoem {
+	display: table-cell;
+	background-color: #bdc3c7;
+	height: 300px;
+	vertical-align: middle;
+	padding-left: 10.5%;
+	padding-top: 3.5%;
+	padding-bottom: 3.5%;
+	border-spacing: 30px 20px;
+}
+
+.authorLongPoem {
+	text-align: right;
+	margin-right: 7%;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.longPoemText {
+	display: table-caption;
+	text-align: center;
+	font-family: 'Droid Serif', serif;
+	font-size: 15px;
+	color: #2c3e50;
+	width: 80%;
+	margin-top: 2%;	
+	margin-left: 10%;
+	line-height: 28px;
+}
+
+.way1 {
+	display: table-cell;
+	background-image: url('../img/way1.jpg');
+	background-size: cover;
+	background-position: center;
+	width: 180px;
+	height: 140px;
+	border-radius: 3%;
+}
+
+.bird {
+	display: table-cell;
+	background-image: url('../img/bird2.jpg');
+	background-size: cover;
+	background-position: center;
+	width: 180px;
+	height: 140px;
+	border-radius: 3%;
+}
+
+.human {
+	display: table-cell;
+	background-image: url('../img/human.jpg');
+	background-size: cover;
+	background-position: center;
+	width: 180px;
+	height: 140px;
+	border-radius: 3%;
+}
+
+.girl {
+	display: table-cell;
+	background-image: url('../img/girl.jpg');
+	background-size: cover;
+	background-position: center;
+	width: 180px;
+	height: 140px;
+	border-radius: 3%;
+}
+
+.parkbench {
+	display: table-cell;
+	background-image: url('../img/parkbench.jpg');
+	background-size: cover;
+	background-position: center;
+	width: 180px;
+	height: 140px;
+	border-radius: 3%;
+}
+
+.endurance {
+	display: table-cell;
+	background-image: url('../img/endurance.jpg');
+	background-size: cover;
+	background-position: center;
+	width: 180px;
+	height: 140px;
+	border-radius: 3%;
+}
+
+
+/*FOOTER*/
+
+footer {
+	background-color: #2c3e50;
+	height: 70px;
+	border-spacing: 30px 20px;
+	display: table-footer-group;
+}
+
+.foot {
+	display: table-cell;
+	padding-left: 43%;
+	text-align: center;
+	padding-bottom: 25px;
+	padding-top: 25px;
+}
+
+.copyright {
+	display: table-caption;
+	font-family: 'Droid Serif', serif;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.facebook {
+	height: 30px;
+	width: 30px;
+	background-color: transparent;
+	display: table-cell;
+	background-image: url('../img/facebook.svg');
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+.twitter {
+	height: 30px;
+	width: 30px;
+	background-color: transparent;
+	display: table-cell;
+	background-image: url('../img/twitter.svg');
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+.world {
+	height: 30px;
+	width: 30px;
+	background-color: transparent;
+	display: table-cell;
+	background-image: url('../img/earth.svg');
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
